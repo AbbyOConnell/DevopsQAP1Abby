@@ -18,7 +18,7 @@ class SuggestionEngineTest {
             Map<String, Integer> wordSuggestionDB = suggestionEngine.getWordSuggestionDB();
             assertFalse(wordSuggestionDB.isEmpty());
         } catch (Exception e) {
-            fail("Exception thrown while loading dictionary data: " + e.getMessage());
+            fail("Exception thrown while loading dictionary data: " + e.getMessage()); //test
         }
     }
 
