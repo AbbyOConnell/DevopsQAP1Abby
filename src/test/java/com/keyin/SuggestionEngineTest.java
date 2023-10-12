@@ -1,7 +1,10 @@
+package com.keyin;
+
 import static org.junit.jupiter.api.Assertions.*;
 import com.keyin.SuggestionEngine;
 import com.keyin.SuggestionsDatabase;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -10,7 +13,7 @@ import java.util.Map;
 
 class SuggestionEngineTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void loadDictionaryData() {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         try {
@@ -22,7 +25,7 @@ class SuggestionEngineTest {
         }
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void generateSuggestions() throws Exception {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         suggestionEngine.loadDictionaryData(Paths.get(ClassLoader.getSystemResource("words.txt").toURI()));
@@ -37,7 +40,7 @@ class SuggestionEngineTest {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setWordSuggestionDB() {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         try {
