@@ -14,7 +14,7 @@ import java.util.Map;
 class SuggestionEngineTest {
 
     @Test
-    void loadDictionaryData() {
+    void testloadDictionaryData() {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         try {
             suggestionEngine.loadDictionaryData(Paths.get("src/main/resources/words.txt"));
@@ -26,7 +26,7 @@ class SuggestionEngineTest {
     }
 
     @Test
-    public void generateSuggestions() throws Exception {
+    public void testgenerateSuggestions() throws Exception {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         suggestionEngine.loadDictionaryData(Paths.get(ClassLoader.getSystemResource("words.txt").toURI()));
 
@@ -41,7 +41,7 @@ class SuggestionEngineTest {
     }
 
     @Test
-    void setWordSuggestionDB() {
+    void testsetWordSuggestionDB() {
         SuggestionEngine suggestionEngine = new SuggestionEngine();
         try {
             suggestionEngine.loadDictionaryData(Paths.get(ClassLoader.getSystemResource("words.txt").toURI()));
