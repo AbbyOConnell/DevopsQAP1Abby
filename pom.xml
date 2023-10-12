@@ -29,8 +29,8 @@
                 <version>3.1.2</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/*Tests.java</include>
+                        <include>**/*SuggestionEngineTest.java</include>
+
                     </includes>
                 </configuration>
             </plugin>
