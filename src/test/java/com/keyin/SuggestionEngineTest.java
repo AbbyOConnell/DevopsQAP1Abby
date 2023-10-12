@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 
-class testSuggestionEngineTest {
+class SuggestionEngineTest {
 
     @Test
     void testloadDictionaryData() {
